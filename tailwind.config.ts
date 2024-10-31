@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/styles/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -41,6 +42,7 @@ const config: Config = {
           1: "#F9F8F8",
           2: "#F1EFEF",
         },
+        kakao: "#FAE300",
       },
       fontFamily: {
         sans: ["Pretendard", "sans-serif"],
