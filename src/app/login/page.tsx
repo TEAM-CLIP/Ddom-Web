@@ -1,5 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+import KAKAO_ICON from "@/assets/kakao_icon.svg";
+import APPLE_ICON from "@/assets/apple_icon.svg";
 
 export default function Login() {
   return (
@@ -19,23 +20,13 @@ export default function Login() {
       <div className="fixed bottom-[8px] left-0 right-0 px-[20px] flex flex-col gap-[8px]">
         <Link href="/login" className="w-full">
           <button className="btn text-gray-10 bg-kakao flex items-center justify-center gap-[8px] w-full">
-            <Image
-              src="/icons/kakao_icon.svg"
-              alt="카카오 아이콘"
-              width={24}
-              height={24}
-            />
+            <KAKAO_ICON alt="카카오 아이콘" width={24} height={24} />
             <span>Kakao로 로그인하기</span>
           </button>
         </Link>
         <Link href="/login" className="w-full">
           <button className="btn text-white bg-black flex items-center justify-center gap-[8px] w-full">
-            <Image
-              src="/icons/apple_icon.svg"
-              alt="애플 아이콘"
-              width={24}
-              height={24}
-            />
+            <APPLE_ICON alt="애플 아이콘" width={24} height={24} />
             <span>Apple로 로그인하기</span>
           </button>
         </Link>
