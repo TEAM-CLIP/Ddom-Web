@@ -34,7 +34,7 @@ const config: Config = {
           9: "#738b44",
           10: "#5b6d36",
         },
-        secondar: {
+        secondary: {
           1: "#fff3f0",
           2: "#ffe2db",
           3: "#ffcbbe",
