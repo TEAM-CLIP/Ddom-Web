@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
+import MobileOnly from "@/components/MobileOnly";
+import TopNav from "@/components/TopNav";
 
 const Pretendard = localFont({
   src: "../fonts/PretendardVariable.woff2",
@@ -20,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Pretendard.variable} antialiased`}>{children}</body>
+      <body className={`${Pretendard.variable} antialiased bg-white`}>
+        <MobileOnly>{children}</MobileOnly>
+      </body>
     </html>
   );
 }
